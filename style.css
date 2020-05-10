@@ -77,24 +77,14 @@ a {
 
 /* GRID */
 .grid-wrapper {
-    grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 75px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     display: grid;
     gap: 20px;
-    /* grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); */
+    justify-content: center;
 }
 
 .box > img {
-    width: 25%;
-    float: left;
-    margin: 5px 15px 15px 5px;
-}
-
-.box {
-    background-color: #f3f3f3;
-    padding: 130px;
-    margin: 20px;
-    min-height: 200px;
+    width: 100%;
 }
 
 nav {
