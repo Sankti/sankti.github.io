@@ -1,0 +1,125 @@
+body {
+    background-color: #303841;
+    margin: auto 0;
+    font-family: 'Courier New', Courier, monospace;
+    color: #f3f3f3
+}
+
+.raw-zone {
+    color: #f3f3f3;
+    font-size: 2em;
+    border-radius: 4px;
+    border: 1px solid #303841;
+    transition: all 0.3s linear;
+}
+
+.zone {
+    color: #f3f3f3;
+    font-size: 2em;
+    border-radius: 4px;
+    border: 1px solid #303841;
+    transition: all 0.3s linear;
+}
+
+.zone:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+/* NAV */
+.main-nav {
+    display: flex;
+    list-style: none;
+    font-size: 0.7em;
+    margin: 0;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .main-nav {
+        font-size: 0.5em;
+        padding: 0;
+    }
+}
+
+.push {
+    margin-left: auto;
+}
+
+li {
+    padding: 20px;
+    margin-right: 10px
+}
+
+a {
+    color: #f3f3f3;
+}
+
+/* COVER */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+.cover {
+    width: 60rem;
+}
+
+/* GRID */
+.grid-wrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 75px;
+    display: grid;
+    gap: 20px;
+    /* grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); */
+}
+
+.box > img {
+    width: 25%;
+    float: left;
+    margin: 5px 15px 15px 5px;
+}
+
+.box {
+    background-color: #f3f3f3;
+    padding: 130px;
+    margin: 20px;
+    min-height: 200px;
+}
+
+nav {
+    border-radius: 0
+}
+
+header {
+    color: #f3f3f3;
+    font-size: 2em;
+    border-radius: 4px;
+    border: 1px solid #303841;
+    transition: all 0.3s linear;
+}
+
+footer {
+    text-align: center;
+    padding: 1px;
+    margin-top: 5px;
+}
+
+.pushable{
+    background: #3a4750; /* Old browsers */
+    background: -moz-linear-gradient(top, #3a4750 0%, #303841 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3a4750), color-stop(100%,#303841)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #3a4750 0%,#303841 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #3a4750 0%,#303841 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #3a4750 0%,#303841 100%); /* IE10+ */
+    background: linear-gradient(top, #3a4750 0%,#303841 100%); /* W3C */
