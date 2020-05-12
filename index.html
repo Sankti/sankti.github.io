@@ -8,23 +8,59 @@
   <link rel="shortcut icon" type="image/png" href="./assets/favicon.png"/>
 </head>
 <body>
+
   <nav class="zone sticky">
     <ul class="main-nav">
       <li><a href="">Home</a></li>
       <li class="push"><a href="">Contact</a></li>
     </ul>
   </nav>
+
   <header class="container">
     <img class="cover" src="./assets/logo_transparent.png" alt="Sankti Webdev Logo">
   </header>
+
   <section class="raw-zone grid-wrapper">
-    <div class="box zone"><img src="./assets/about_me.png"></div>
-    <div class="box zone"><img src="./assets/blog.png"></div>
+    <div class="box zone">
+      <a href="#about">
+        <img src="./assets/about_me.png" alt="About me">
+      </a>
+    </div>
+    <div class="box zone">
+      <a href="#blog">
+        <img src="./assets/blog.png">
+      </a>
+    </div>
     <div class="box zone"><img src="./assets/my_projects.png"></div>
     <div class="box zone"><img src="./assets/contact.png"></div>
   </section>
+
+
+  
+  <section class="raw-container">
+
+    <div class="raw-zone cover raw-container" id="about">
+      <img src="assets/photo.png">
+      <p>Hello. Welcome to my homepage!</p><br>
+      <p>My name is Adam. I'm a web developer with interest in data science and game design. I love Python and want to learn Ruby. Please feel free to browse through my projects!</p><br>
+      <p>🍲 I also love cooking! 🍲</p>
+    </div>
+
+    <div class="cover raw-container break"><h1> </h1></div>
+
+    <div class="raw-zone cover raw-container" id="blog">
+      <img src="assets/posts/sokoann.png" alt="SokoAnn game screenshot">
+      <h3>Introducing: SokoAnn</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt in nemo et eum aperiam iste. Natus sequi, dolore sint similique enim fugit amet optio, ab placeat nam aliquid, voluptate tempora.</p>
+    </div>
+
+    <div class="cover raw-container break"><h1> </h1></div>
+
+  </section>
+
   <footer>
     <p>Website by Adam Goździelewski</p>
   </footer>
+
 </body>
 </html>
