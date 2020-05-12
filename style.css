@@ -103,6 +103,12 @@ footer {
     .cover {
         max-width: 100vw;
     }
+
+    .grid-wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 48vw));
+        grid-template-rows: auto;
+        gap: 0;
 }
 
 .pushable{
