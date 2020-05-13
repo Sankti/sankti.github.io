@@ -17,10 +17,16 @@ body {
 .zone {
     color: #f3f3f3;
     font-size: 2em;
+    border-radius: 4px;
     transition: all 0.3s linear;
 }
 
-.zone:hover {
+.special-zone {
+    color: #f3f3f3;
+    transition: all 0.3s linear;
+}
+
+.zone:hover, .special-zone:hover {
     -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
@@ -115,6 +121,14 @@ footer {
     text-align: center;
     padding: 1px;
     margin-top: 5px;
+}
+
+address > ul > li {
+    padding: 0;
+}
+
+div > img {
+    max-width: 80vw;
 }
 
 @media only screen and (max-width: 812px) {
