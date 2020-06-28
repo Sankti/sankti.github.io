@@ -2,21 +2,21 @@ clearElement = (elementID) => {
     document.getElementById(elementID).innerHTML = "";
 }
 
-// buttonSection = document.getElementById("button-section");
+buttonSection = document.getElementById("button-section");
 
-// makePlayButton = () => {
-//     let playButton = document.createElement("div");
-//         playButton.classList.add("button-round");
-//         playButton.innerHTML = "Graj";
-//         document.getElementById("button-section").appendChild(playButton);
+makeMenuButton = () => {
+    let menuButton = document.createElement("div");
+        menuButton.classList.add("button-round");
+        menuButton.innerHTML = "Powrót do Strony Głównej";
+        document.getElementById("button-section").appendChild(menuButton);
     
-//     pushButton = () => {
-//         console.log("Wduszono przycisk.");
-//     }
-//     playButton.addEventListener("click", pushButton);
-// }
+    pushButton = () => {
+        location.replace("./index.html");
+    }
+    menuButton.addEventListener("click", pushButton);
+}
 
-// makePlayButton();
+makeMenuButton();
 
 // Right Sidebar
 let contentH = document.getElementById("content-h");
