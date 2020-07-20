@@ -7,7 +7,7 @@ a {
 }
 
 body {
-    background-image: linear-gradient(#FFFED7, #448198);
+    background-image: linear-gradient(grey, #448198);
     margin: 1em;
     font-family: 'Verdana', Courier, monospace;
     color: #5B5379;
