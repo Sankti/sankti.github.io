@@ -11,85 +11,63 @@
 
   <nav class="zone sticky">
     <ul class="main-nav">
-      <li><a href="">Home</a></li>
-      <li class="push"><a href="">Contact</a></li>
+      <li><a href="#top">Home</a></li>
+      <li class="push"><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
-  <header class="container">
+  <header id="top" class="container">
     <img class="cover" src="./assets/logo_transparent.png" alt="Sankti Webdev Logo">
   </header>
 
-  <section class="raw-zone grid-wrapper">
-    <div class="box zone">
-      <a href="#about">
-        <img src="./assets/about_me.png" alt="About me">
-      </a>
-    </div>
-    <div class="box zone">
-      <a href="#blog">
-        <img src="./assets/blog.png">
-      </a>
-    </div>
-    <div class="box zone">
-      <a href="#projects">
-        <img src="./assets/my_projects.png">
-      </a>
-    </div>
-    <div class="box zone">
-      <a href="#contact">
-        <img src="./assets/contact.png">
-      </a>
-    </div>
-  </section>
-
-
-  
   <section class="raw-container">
-
-    <div class="raw-zone cover raw-container" id="about">
-      <h2>About me</h2>
-      <img src="assets/photo.png">
-      <p>Hello. Welcome to my homepage!</p><br>
-      <p>My name is Adam. I'm a web developer with interest in data science and game design. <a href="https://courses.edx.org/certificates/9b0c4da8c98a4ac48428a6eda9b2f2c4">I love Python</a> and want to learn Ruby. Please feel free to browse through my projects!</p><br>
-      <p>🍲 I also love cooking! 🍲</p>
-    </div>
-
-    <div class="cover raw-container break"><h1> </h1></div>
-
-    <div class="raw-zone cover raw-container" id="blog">
-      <h2>Blog</h2>
-      <img src="assets/posts/sokoann.png" alt="SokoAnn game screenshot">
-      <h3>Introducing: SokoAnn</h3>
-      <p>After many days of coding, I am happy to announce that the first stable version of my Sokoban-like game is out on Github. Please feel free to try it out and tell me if you enjoyed the experience!</p>
-      <p>It was a challenging, yet fulfilling experience to use the Pygame external library. Making a grid-based game reminded me of working with arrays.</p>
-    </div>
-
-    <div class="cover raw-container break"><h1> </h1></div>
 
     <div class="raw-zone cover raw-container" id="projects">
       <h2>My Projects</h2>
       <section class="grid-wrapper">
+
+        <div class="box special-zone pushable">
+          <a href="https://github.com/Sankti/Palatinus">
+            <h3>Palatinus</h3>
+            <img src="./assets/posts/palatinus_thumb.png" alt="Wojewoda Thumbnail">
+            <p>Tech used: React.js</p>
+            <p>Palatinus is an informational portal about voivodeships of Poland made using React.js.</p>
+          </a>
+        </div>
+
+        <div class="box special-zone pushable">
+          <a href="./opole/index.html">
+            <h3>Wojewoda</h3>
+            <img src="./assets/posts/wojewoda_thumb.png" alt="Wojewoda Thumbnail">
+            <p>Tech used: JavaScript, QGIS</p>
+            <p>Wojewoda is an informational portal about my home region including an SVG map-based quiz game.</p>
+          </a>
+        </div>
+
         <div class="box special-zone pushable">
           <a href="https://github.com/Sankti/SokoAnn">
             <h3>SokoAnn</h3>
             <img src="./assets/posts/sokoann_thumb.png" alt="SokoAnn Thumbnail">
+            <p>Tech used: Python, Pygame</p>
             <p>SokoAnn is a puzzle game made in Python's Pygame library.</p>
           </a>
         </div>
+
         <div class="box special-zone pushable">
           <a href="https://arhn.eu/tekstowki/ladazag/">
             <h3>Ładazag</h3>
             <img src="./assets/posts/ladazag_thumb.png" alt="Ladazag Thumbnail">
+            <p>Tech used: TGE</p>
             <p>Ładazag is a role-playing game which won the ARHN.eu's <em>Text Games Editor contest</em>.</p>
           </a>
         </div>
+
       </section>
     </div>
 
     <div class="cover raw-container break"><h1> </h1></div>
 
-    <div class="raw-zone cover raw-container" id="contact">
+    <div id="contact" class="raw-zone cover raw-container">
       <h2>Contact</h2>
       <p>Please use below link to leave me an e-mail:</p>
       <address>
