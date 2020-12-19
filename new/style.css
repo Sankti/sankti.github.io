@@ -34,7 +34,7 @@ h1 {
     left: 50%;
     top: 40%;
     height: 2.5rem;
-    padding-top: 2.3rem;
+    padding-top: 1.3rem;
     width: 15rem;
     text-align: center;
     color: #FFF;
@@ -72,7 +72,7 @@ h1 {
 
 .split.left {
     left: 0;
-    background: url("img/blanchette_r.PNG") center center no-repeat;
+    background: url("img/rose_for_anna.png") center center no-repeat;
     background-size: cover;
 }
 
@@ -86,7 +86,7 @@ h1 {
 
 .split.right {
     right: 0;
-    background: url("img/blanchette_b.png") center center no-repeat;
+    background: url("img/vacation_flower.png") center center no-repeat;
     background-size: cover;
 }
 
@@ -136,7 +136,7 @@ h1 {
     }
 }
 
-@media(min-height: 700px) {
+@media(max-height: 700px) {
     .button {
         top: 70%;
     }
