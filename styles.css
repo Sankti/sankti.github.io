@@ -1,0 +1,121 @@
+/* Root Constants */
+:root {
+    --fonts-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --colour-main: #213C51;
+    --colour-shadow: #6594B1;
+    --colour-frame: #DDAED3;
+    --colour-secondary: #EEEEEE;
+}
+
+/* Main Tags */
+body {
+    background-image: linear-gradient(to bottom right, #213C51, #0E0E0E);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding: 5px;
+}
+h1 {
+    font-family: var(--fonts-main);
+    color: var(--colour-secondary);
+    text-shadow: 5px 5px 5px var(--colour-shadow);
+    padding-top: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+}
+h2 {
+    font-family: var(--fonts-main);
+    color: var(--colour-main);
+    text-shadow: 1px 1px 1px var(--colour-shadow);
+    padding-top: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+p {
+    font-family: var(--fonts-main);
+    color: var(--colour-main);
+    padding-top: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+}
+a {
+    font-family: var(--fonts-main);
+    color: var(--colour-main);
+}
+
+/* Class Tags */
+div.header {
+    grid-area: 1 / 1 / 2 / 6;
+    text-align: center;
+    margin-top: 15px;
+    padding: 5px;
+}
+div.menu {
+    grid-area: 2 / 1 / 5 / 2;
+    padding: 0;
+}
+div.menu-item {
+    background-color: var(--colour-secondary);
+    border: 3px solid;
+    border-color: var(--colour-frame);
+    padding: 3px;
+    width: 150px;
+    box-shadow: 5px 5px 5px var(--colour-shadow) inset;
+    width: 80%;
+    margin: 10px;
+    transition: 0.3s;
+}
+div.menu-item:hover {
+    opacity: 0.6;
+}
+section.content {
+    display: none;
+    grid-area: 2 / 2 / 5 / 6;
+    background-color: var(--colour-secondary);
+    border: 3px solid;
+    border-color: var(--colour-frame);
+    padding: 5px;
+    width: 150px;
+    box-shadow: 5px 5px 5px var(--colour-shadow) inset;
+    width: 80%;
+}
+section.contentlist {
+    display: none;
+    grid-area: 2 / 2 / 5 / 6;
+    background-color: var(--colour-secondary);
+    border: 3px solid;
+    border-color: var(--colour-frame);
+    padding: 5px;
+    width: 150px;
+    box-shadow: 5px 5px 5px var(--colour-shadow) inset;
+    width: 80%;
+    overflow-y: scroll;
+    height:400px;
+}
+div.footer {
+    grid-area: 5 / 1 / 6 / 6;
+    text-align: center;
+}
+img.frame {
+    height: 128px;
+    width: 128px;
+    background-color: var(--colour-main);
+    border: 3px solid;
+    margin: 15px;
+    border-color: var(--colour-frame);
+}
+
+/* Navigation */
+section.content:target {
+    display: flex;
+}
+section.contentlist:target {
+    display: block;
+}
+#home {
+    display: flex;
+}
