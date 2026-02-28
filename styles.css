@@ -94,7 +94,6 @@ section.contentlist {
     box-shadow: 5px 5px 5px var(--colour-shadow) inset;
     width: 80%;
     overflow-y: scroll;
-    height:400px;
 }
 div.footer {
     grid-area: 5 / 1 / 6 / 6;
